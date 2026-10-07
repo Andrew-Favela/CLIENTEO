@@ -115,7 +115,7 @@
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 md:h-24 flex items-center justify-between">
             <!-- Contenedor del Logo con alineación vertical perfecta y fondo protector garantizado -->
             <a href="#" class="relative z-10 flex items-center group py-2" aria-label="CLIENTEO Home">
-                <img src="./Logo.png" alt="CLIENTEO Logo" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                <img src="./logo.png" alt="CLIENTEO Logo" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </a>
 
             <!-- Navegación estilo Minimalista Brutalista -->
@@ -137,12 +137,12 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-[#050B14]/95 backdrop-blur-2xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col items-center justify-center">
-            <nav class="flex flex-col items-center gap-8 text-sm uppercase tracking-[0.2em] font-bold text-gray-300">
-                <a href="#filosofia" class="mobile-link hover:text-[#00FFA3] transition-colors duration-300">Filosofía</a>
-                <a href="#servicios" class="mobile-link hover:text-[#00FFA3] transition-colors duration-300">Soluciones</a>
-                <a href="#metodologia" class="mobile-link hover:text-[#00FFA3] transition-colors duration-300">Impacto</a>
-                <a href="#contacto" class="mobile-link mt-4 px-8 py-4 rounded-full bg-[#00FFA3] text-black hover:bg-white transition-all duration-300 shadow-[0_10px_30px_rgba(0,255,163,0.3)]">
+        <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-md z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col items-center justify-center">
+            <nav class="flex flex-col items-center gap-8 text-sm uppercase tracking-[0.2em] font-bold text-slate-800">
+                <a href="#filosofia" class="mobile-link hover:text-[#1A5B9C] transition-colors duration-300">Filosofía</a>
+                <a href="#servicios" class="mobile-link hover:text-[#1A5B9C] transition-colors duration-300">Soluciones</a>
+                <a href="#metodologia" class="mobile-link hover:text-[#1A5B9C] transition-colors duration-300">Impacto</a>
+                <a href="#contacto" class="mobile-link mt-4 px-8 py-4 rounded-full bg-gray-900 text-white hover:bg-[#00FFA3] hover:text-black transition-all duration-300 shadow-lg shadow-black/10">
                     Hablemos
                 </a>
             </nav>
@@ -416,7 +416,7 @@
     <footer class="bg-[#02050A] py-12 border-t border-white/10 relative z-10">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="flex items-center">
-                <img src="./Logo.png" alt="CLIENTEO Logo" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./logo.png" alt="CLIENTEO Logo" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity">
             </div>
 
             <div class="text-xs uppercase tracking-widest text-gray-500 font-medium text-center">
@@ -475,13 +475,11 @@
                     mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
                     mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
                     mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Icono X
-                    mobileMenuBtn.classList.replace('text-gray-900', 'text-white');
                     document.body.style.overflow = 'hidden'; // Evitar scroll
                 } else {
                     mobileMenu.classList.add('opacity-0', 'pointer-events-none');
                     mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
                     mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // Icono Hamburguesa
-                    mobileMenuBtn.classList.replace('text-white', 'text-gray-900');
                     document.body.style.overflow = ''; // Restaurar scroll
                 }
             }
