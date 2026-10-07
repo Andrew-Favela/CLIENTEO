@@ -111,26 +111,26 @@
     <div class="fixed top-[30vh] right-[-15vw] w-[50vw] h-[50vw] rounded-full bg-[#00FFA3]/8 blur-[150px] pointer-events-none -z-10"></div>
 
     <!-- ==================== HEADER (CRÍTICO: Protección y Contraste del Logo) ==================== -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#050B14]/85 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 md:h-24 flex items-center justify-between">
             <!-- Contenedor del Logo con alineación vertical perfecta y fondo protector garantizado -->
             <a href="#" class="relative z-10 flex items-center group py-2" aria-label="CLIENTEO Home">
-                <img src="./Logo.png" alt="CLIENTEO Logo" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+                <img src="./logo.png" alt="CLIENTEO Logo" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </a>
 
             <!-- Navegación estilo Minimalista Brutalista -->
-            <nav class="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] font-semibold text-gray-400">
-                <a href="#filosofia" class="hover:text-white transition-colors duration-300">Filosofía</a>
-                <a href="#servicios" class="hover:text-white transition-colors duration-300">Soluciones</a>
-                <a href="#metodologia" class="hover:text-white transition-colors duration-300">Impacto</a>
+            <nav class="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.2em] font-semibold text-slate-800">
+                <a href="#filosofia" class="hover:text-[#1A5B9C] transition-colors duration-300">Filosofía</a>
+                <a href="#servicios" class="hover:text-[#1A5B9C] transition-colors duration-300">Soluciones</a>
+                <a href="#metodologia" class="hover:text-[#1A5B9C] transition-colors duration-300">Impacto</a>
             </nav>
 
             <!-- CTA Header -->
             <div class="flex items-center gap-4">
-                <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs uppercase tracking-[0.15em] font-bold bg-white text-black hover:bg-[#00FFA3] hover:text-black transition-all duration-300 shadow-lg shadow-white/5">
+                <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs uppercase tracking-[0.15em] font-bold bg-gray-900 text-white hover:bg-[#00FFA3] hover:text-black transition-all duration-300 shadow-lg shadow-black/10">
                     Hablemos
                 </a>
-                <button id="mobile-menu-btn" class="md:hidden p-2 text-white/80 hover:text-white z-50 relative" aria-label="Abrir Menú">
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-900 hover:text-black z-50 relative" aria-label="Abrir Menú">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
@@ -153,8 +153,8 @@
         <!-- ==================== HERO SECTION (Huge Inc. Typography + iOS Glass) ==================== -->
         <section class="relative min-h-[100svh] pt-36 pb-20 md:pt-48 md:pb-32 flex flex-col justify-center overflow-hidden">
             <!-- IMAGEN REQUERIDA: hero-bg.png | Dimensiones: 1920x1080px | Descripción: Textura geométrica oscura 3D con destellos sutiles de cristal esmerilado y sombras oscuras de ultra alto contraste -->
-            <img src="./hero-bg.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover -z-20 opacity-25 mix-blend-luminosity pointer-events-none">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#050B14]/40 via-[#050B14]/80 to-[#050B14] -z-10"></div>
+            <img src="./hero-bg.png" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover -z-20 opacity-40 mix-blend-luminosity pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#050B14]/20 via-[#050B14]/65 to-[#050B14] -z-10"></div>
 
             <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
                 <div class="reveal-spring inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl mb-8">
@@ -206,21 +206,21 @@
 
                 <!-- Stats Brutalistas en Glassmorphism -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
-                    <div class="ios-glass p-8 rounded-4xl reveal-spring">
-                        <div class="font-huge font-black text-5xl md:text-6xl text-[#00FFA3] mb-2">+340%</div>
-                        <div class="text-xs uppercase tracking-widest font-bold text-gray-400">Conversión Promedio</div>
+                    <div class="ios-glass p-6 sm:p-8 rounded-4xl flex flex-col justify-center items-start overflow-hidden reveal-spring">
+                        <div class="font-huge font-black text-4xl sm:text-5xl lg:text-4xl xl:text-5xl tracking-tighter break-words whitespace-normal text-[#00FFA3] mb-2">+340%</div>
+                        <div class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-gray-400 mt-auto">Conversión Promedio</div>
                     </div>
-                    <div class="ios-glass p-8 rounded-4xl reveal-spring delay-100">
-                        <div class="font-huge font-black text-5xl md:text-6xl text-white mb-2">&lt; 0.8s</div>
-                        <div class="text-xs uppercase tracking-widest font-bold text-gray-400">Velocidad de Carga</div>
+                    <div class="ios-glass p-6 sm:p-8 rounded-4xl flex flex-col justify-center items-start overflow-hidden reveal-spring delay-100">
+                        <div class="font-huge font-black text-4xl sm:text-5xl lg:text-4xl xl:text-5xl tracking-tighter break-words whitespace-normal text-white mb-2">&lt; 0.8s</div>
+                        <div class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-gray-400 mt-auto">Velocidad de Carga</div>
                     </div>
-                    <div class="ios-glass p-8 rounded-4xl reveal-spring delay-200">
-                        <div class="font-huge font-black text-5xl md:text-6xl text-[#00B4D8] mb-2">100%</div>
-                        <div class="text-xs uppercase tracking-widest font-bold text-gray-400">Código Propietario</div>
+                    <div class="ios-glass p-6 sm:p-8 rounded-4xl flex flex-col justify-center items-start overflow-hidden reveal-spring delay-200">
+                        <div class="font-huge font-black text-4xl sm:text-5xl lg:text-4xl xl:text-5xl tracking-tighter break-words whitespace-normal text-[#00B4D8] mb-2">100%</div>
+                        <div class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-gray-400 mt-auto">Código Propietario</div>
                     </div>
-                    <div class="ios-glass p-8 rounded-4xl reveal-spring delay-300">
-                        <div class="font-huge font-black text-5xl md:text-6xl text-white mb-2">8 Dígitos</div>
-                        <div class="text-xs uppercase tracking-widest font-bold text-gray-400">Ingresos Gestionados</div>
+                    <div class="ios-glass p-6 sm:p-8 rounded-4xl flex flex-col justify-center items-start overflow-hidden reveal-spring delay-300">
+                        <div class="font-huge font-black text-4xl sm:text-5xl lg:text-4xl xl:text-5xl tracking-tighter break-words whitespace-normal text-white mb-2">8 Dígitos</div>
+                        <div class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-gray-400 mt-auto">Ingresos Gestionados</div>
                     </div>
                 </div>
             </div>
@@ -389,11 +389,11 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-xs uppercase tracking-widest text-gray-400 font-semibold mb-2">Nombre Completo</label>
-                                <input type="text" required placeholder="Alexander Vance" class="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00FFA3] focus:bg-white/10 transition-all duration-300 text-sm">
+                                <input type="text" id="input-nombre" required placeholder="Alexander Vance" class="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00FFA3] focus:bg-white/10 transition-all duration-300 text-sm">
                             </div>
                             <div>
                                 <label class="block text-xs uppercase tracking-widest text-gray-400 font-semibold mb-2">Teléfono / WhatsApp</label>
-                                <input type="tel" required placeholder="+34 600 000 000" class="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00FFA3] focus:bg-white/10 transition-all duration-300 text-sm">
+                                <input type="tel" id="input-telefono" required placeholder="+34 600 000 000" class="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-[#00FFA3] focus:bg-white/10 transition-all duration-300 text-sm">
                             </div>
                         </div>
 
@@ -416,7 +416,7 @@
     <footer class="bg-[#02050A] py-12 border-t border-white/10 relative z-10">
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="flex items-center">
-                <img src="./Logo.png" alt="CLIENTEO Logo" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./logo.png" alt="CLIENTEO Logo" class="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity">
             </div>
 
             <div class="text-xs uppercase tracking-widest text-gray-500 font-medium text-center">
@@ -456,9 +456,9 @@
             const header = document.querySelector('header');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 40) {
-                    header.classList.add('shadow-[0_10px_30px_rgba(0,0,0,0.8)]', 'border-white/15');
+                    header.classList.add('shadow-md');
                 } else {
-                    header.classList.remove('shadow-[0_10px_30px_rgba(0,0,0,0.8)]', 'border-white/15');
+                    header.classList.remove('shadow-md');
                 }
             });
 
@@ -475,11 +475,13 @@
                     mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
                     mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
                     mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Icono X
+                    mobileMenuBtn.classList.replace('text-gray-900', 'text-white');
                     document.body.style.overflow = 'hidden'; // Evitar scroll
                 } else {
                     mobileMenu.classList.add('opacity-0', 'pointer-events-none');
                     mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
                     mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // Icono Hamburguesa
+                    mobileMenuBtn.classList.replace('text-white', 'text-gray-900');
                     document.body.style.overflow = ''; // Restaurar scroll
                 }
             }
@@ -492,6 +494,21 @@
                     if (isMenuOpen) toggleMenu();
                 });
             });
+
+            // Validaciones Estrictas del Formulario
+            const inputNombre = document.getElementById('input-nombre');
+            if (inputNombre) {
+                inputNombre.addEventListener('input', function() {
+                    this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+                });
+            }
+
+            const inputTelefono = document.getElementById('input-telefono');
+            if (inputTelefono) {
+                inputTelefono.addEventListener('input', function() {
+                    this.value = this.value.replace(/[^0-9+]/g, '');
+                });
+            }
         });
     </script>
 </body>
